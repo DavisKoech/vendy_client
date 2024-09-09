@@ -1,7 +1,7 @@
 import axios from "axios"
 
-//const BASE_URL = "https://vendy-api.onrender.com/api/"
-const BASE_URL = "http://localhost:8000/api/"
+const BASE_URL = "https://vendy-api-km85.onrender.com/api/"
+//const BASE_URL = "http://localhost:8000/api/"
 
 
 export const apiRequests = axios.create({
