@@ -1,0 +1,89 @@
+@import "../../index.scss";
+
+.intro {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background: linear-gradient(to right, #B5AC49, #3CA55C);
+    margin: 30px 10px 0;
+    border-radius: 5px;
+
+    @include mobile{
+      margin: 5px 10px 0;
+      height: max-content;
+      align-items: center;
+      
+    }
+
+    .introContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+
+      @include mobile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .introText {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 45%; 
+
+        @include mobile{
+          width: 100%;
+          gap: 10px;
+        }
+
+        h2 {
+          font-size: 50px;
+          width: 100%;
+
+          @include mobile{
+            font-size: 20px;
+          }
+        }
+
+        button {
+          width: 150px;
+          padding: 10px;
+          border: 1px solid gainsboro;
+          cursor: pointer;
+          font-weight: 600;
+
+          &:hover {
+            background-color: rgb(202, 189, 189);
+          }
+        }
+      }
+
+      .images {
+        width: 600px; 
+        height: 450px; 
+
+        @include mobile{
+          align-self: center;
+          height: 200px;
+          width: 90vw;
+        }
+
+        .sliderImage {
+          height: 450px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+
+          @include mobile{
+            width: 300px;
+            align-self: center;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }

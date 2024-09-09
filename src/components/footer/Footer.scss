@@ -1,0 +1,283 @@
+@import "../../index.scss";
+
+.footer{
+    margin-top: 40px;
+    height: max-content;
+    background-color:#e5e5e5;;
+    color: black;
+
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+
+            @include mobile{
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+
+                @include mobile{
+                    gap: 3px;
+                }
+                
+                h4{
+                    font-size: 13px;
+
+                    @include mobile{
+                        font-size: 12px;
+                    }
+                }
+
+                .data{
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 5px;
+                        object-fit: cover;
+
+                        @include mobile{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+
+                    h6{
+                        font-weight: 400;
+                        font-size: 12px;
+                        cursor: pointer;
+
+                        @include mobile{
+                            font-size: 11px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .center{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                @include mobile{
+                    gap: 3px;
+                }
+
+                h4{
+                    font-size: 12px;
+
+                    @include mobile{
+                        font-size: 11px;
+                    }
+                }
+
+                .dataplace{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 2px;
+                    margin-bottom: 5px;
+
+                    img{
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 5px;
+                        object-fit: cover;
+
+                        @include mobile{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+
+                    h3{
+                        font-weight: 400;
+                        font-size: 12px;
+
+                        @include mobile{
+                            font-size: 11px;
+                        }
+                    }
+
+                    h4{
+                        font-size: 12px;
+
+                        @include mobile{
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .data{
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    margin-bottom: 5px;
+
+                    img{
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 5px;
+                        object-fit: cover;
+
+                        @include mobile{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+
+                    h5{
+                        font-weight: 400;
+                        font-size: 11px;
+                        cursor: pointer;
+                        transition: .2s all ease-in-out;
+
+                        @include mobile{
+                            font-size: 11px;
+                        }
+
+                        &:hover{
+                            border-bottom: 1px solid black;
+                            color: #CB4805;
+                            width: max-content;
+                        }
+                    }
+                }
+
+            }
+
+            .center2{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                @include mobile{
+                    gap: 3px;
+                }
+
+                h4{
+                    font-size: 12px;
+
+                    @include mobile{
+                        font-size: 11px;
+                    }
+                    
+                }
+
+                h6{
+                    font-weight: 400;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    transition: .2s all ease-in-out;
+
+                    @include mobile{
+                        font-size: 11px;
+                    }
+
+                    @include mobile{
+                        margin-bottom: 3px;
+                    }
+
+                    &:hover{
+                        border-bottom: 1px solid black;
+                        color: #CB4805;
+                        width: max-content;
+                    }
+                }
+
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                @include mobile{
+                    gap: 3px;
+                }
+
+                h4{
+                    font-size: 12px;
+                    font-weight: 400;
+
+                    @include mobile{
+                        font-size: 11px;
+                    }
+                }
+
+                .socialAccounts{
+                    display: flex;
+                    gap: 3px;
+                    cursor: pointer;
+                    .data{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        margin-bottom: 10px;
+    
+                        img{
+                            height: 25px;
+                            width: 25px;
+                            border-radius: 5px;
+                            object-fit: cover;
+    
+                            @include mobile{
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+    
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 300;
+                            font-size: 14px;
+                            transition: .2s all ease-in-out;
+                            padding: 1px;
+    
+                            @include mobile{
+                                font-size: 13px;
+                            }
+    
+                            &:hover{
+                                border-bottom: 1px solid black;
+                                color: #CB4805;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .bottom{
+            padding: 2px;
+            height: 20px;
+           
+            align-self: center;
+   
+            span{
+                color: black;
+                font-size: 11px;
+            }
+            
+        }
+    }
+}

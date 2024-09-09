@@ -1,0 +1,305 @@
+@import "../../index.scss";
+
+.topBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  border-bottom: 0.1px solid rgb(190, 180, 180);
+  margin-bottom: 5px;
+ padding: 5px;
+ position: sticky;
+ top: 0;
+ box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.75);
+z-index: 999;
+background-color: white;
+
+@include mobile{
+  overflow-x: hidden;
+}
+
+h4{
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@include mobile {
+  height: 50px;
+}
+
+&.scrolled{
+  background-color: white;
+}
+
+
+
+
+ .left{
+    .logo{
+
+      
+
+      @include mobile{
+        margin-right: 40px;
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .right{
+
+    .creator{
+      margin-right: 30px;
+      
+      @include mobile{
+        display: none;
+      }
+    }
+
+    .storesWrapper{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+
+      img{
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+        
+        @include mobile{
+           right: 0;
+           margin-top: 6px;
+        }
+      }
+    }
+
+    .createPostButton{
+      margin-right: 20px;
+      border: none;
+      padding: 3px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: black;
+      font-size: 13px;
+      color: white;
+
+      @include mobile {
+        display: none;
+  
+      }
+
+      
+    }
+
+    .storesLink{
+       margin-right: 20px;
+       font-weight: 400;
+       font-size: 14px;
+       cursor: pointer;
+
+       @include mobile {
+        display: none;
+  
+      }
+
+       &:hover{
+        border-bottom: 1px solid black;
+       }
+       
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .loggedInAccount{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include mobile{
+          gap: 2px;
+        }
+
+        .cart{
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          img{
+            height: 35px;
+            width: 35px;
+            cursor: pointer;
+
+          }
+
+          .cartItems{
+             background-color: red;
+             border-radius: 50%;
+             position: absolute;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding: 1px;
+             height: 15px;
+             width: 15px;
+             right: 0;
+             margin-bottom: 15px;
+             font-size: 12px;
+             color: white;
+             
+          }
+
+          
+        }
+
+        .notification{
+          position: relative;
+          
+          img{
+            height: 30px;
+            width: 30px;
+            margin-top: 8px;
+          }
+
+          span{
+            position: absolute;
+            top: 6px;
+            right: 0;
+            padding: 3px;
+            background-color: red;
+            height: 10px;
+            width: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+            color: white;
+          }
+        }
+
+        .mobilePost{
+          height: 27px;
+          width: 27px;
+          object-fit: cover;
+          cursor: pointer;
+          display: none;
+
+          @include mobile{
+            display: block;
+          }
+        }
+
+        .accountOrders{
+          display: flex;
+
+          @include mobile {
+            display: none;
+      
+          }
+
+          h4{
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+
+        .accountDetails{
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+
+          img{
+            height: 35px;
+            width: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+
+            @include mobile{
+               height: 30px;
+               width: 30px;
+            }
+          }
+
+          h3{
+            font-weight: 400;
+            font-size: 14px;
+
+            @include mobile{
+              font-size: 13px;
+            }
+
+            &:hover{
+              color: orange;
+            }
+          }
+
+          .logOut{
+            margin-left: 5px;
+            padding: 3px;
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+
+            @include mobile{
+              display: none;
+            }
+          }
+        
+
+          button{
+            margin-left: 5px;
+            padding: 3px;
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+
+            @include mobile{
+              font-size: 12px;
+              padding: 2px;
+            }
+          }
+        }
+
+        .createAccount{
+          font-size: 11px;
+          padding: 5px;
+          border: 1px solid gainsboro;
+          font-weight: 500;
+          color: unset;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+  }
+
+  .bars{
+    height: 25px;
+    width: 25px;
+    margin-left: 3px;
+    cursor: pointer;
+    display: none;
+
+    @include mobile{
+      display: block;
+    }
+  }
+
+}

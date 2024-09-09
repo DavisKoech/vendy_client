@@ -1,0 +1,33 @@
+html{
+    scroll-behavior:smooth;
+    transition: all 1s ease;
+}
+
+:root{
+    --mainColor:#F4B700;
+    --fontColor:#2D2D2D;
+    
+}
+
+.links{
+    outline:none;
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin mobile {
+    @media (max-width: 738px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
+

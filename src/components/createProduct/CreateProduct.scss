@@ -1,0 +1,131 @@
+@import "../../index.scss";
+
+
+.createPost{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 80px;
+    z-index: 99999;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+   width: 450px;
+   height: 510px;
+   background-color: white;
+
+   @include mobile{
+    width: 95%;
+    top: 63px;
+    height: max-content;
+   }
+
+   .createPostTop{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 3px;
+     background-color: rgb(167, 161, 161);
+     height: 30px;
+
+     h3{
+        font-size: 13px;
+        font-weight: 400;
+     }
+
+     img{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+     }
+   }
+
+   .createPostBottom{
+    padding: 5px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+
+        @include mobile{
+            gap: 10px;
+        }
+        
+
+        .createFormData{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label{
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .uploadingImg{
+                height: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+
+            input{
+                padding: 2px;
+                border: none;
+                border: 1px solid gainsboro;
+                outline: none;
+                font-weight: 300;
+            }
+
+            textarea{
+                padding: 2px;
+                border: none;
+                border: 1px solid gainsboro;
+                outline: none;
+                font-weight: 300;
+            }
+
+            .selectedImg{
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+                border-radius: 5px;
+
+                @include mobile{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
+        }
+
+        .createPostSuccess{
+            font-size: 14px;
+            color: green;
+            position: absolute;
+            bottom: 100px;
+            right: 30px;
+        }
+
+        .createPostError{
+            font-size: 14px;
+            color: red;
+            position: absolute;
+            bottom: 100px;
+            right: 30px;
+        }
+
+        button{
+            padding: 3px;
+            border: none;
+            background-color: #1DA1F2;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 1px;
+            color: white;
+        }
+    }
+   }
+}

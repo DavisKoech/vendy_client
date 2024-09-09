@@ -1,0 +1,75 @@
+@import "../../index.scss";
+
+.allStores{
+    display: flex;
+    flex-direction: column;
+
+    .allStoresImg{
+        height: 300px;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 10px;
+
+        @include mobile{
+            height: 200px;
+        }
+    }
+
+    .storesFilter{
+        display: flex;
+        align-self: center;
+        margin-top: 20px;
+        justify-content: space-between;
+        width: 98%;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid rgb(238, 236, 236);
+        border-radius: 5px;
+
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .storeFilterSingle{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span{
+                font-size: 13px;
+
+                @include mobile{
+                    width: 150px;
+                }
+            }
+
+            select{
+                width: 140px;
+                padding: 3px;
+                cursor: pointer;
+                outline: none;
+                border-radius: 5px;
+                font-size: 11px;
+                border: 1px solid rgb(185, 174, 174);
+                background-color: transparent;
+
+                option{
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .allStoresContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 7px;
+    }
+}

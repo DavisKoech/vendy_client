@@ -1,0 +1,89 @@
+@import "../../index.scss";
+
+.feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .feedWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        @include mobile{
+            gap: 4px;
+            padding: 5px;
+        }
+
+        h2{
+            font-weight: 300;
+            font-size: 20px;
+
+            @include mobile{
+                text-align: center;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+
+        .filteringArea{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95vw;
+            padding: 5px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+
+            @include mobile{
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .filterCriteria{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                label{
+                    font-size: 13px;
+
+                    @include mobile{
+                        width: 160px;
+                    }
+                }
+
+                select{
+                    width: 140px;
+                    padding: 3px;
+                    cursor: pointer;
+                    outline: none;
+                    border-radius: 5px;
+                    font-size: 11px;
+                    border: 1px solid rgb(185, 174, 174);
+                    background-color: transparent;
+
+                    option{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .posts{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            @include mobile{
+                gap: 8px;
+            }
+        }
+    }
+}

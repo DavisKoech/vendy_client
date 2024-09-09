@@ -1,0 +1,149 @@
+.register{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerWrapper{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.registerLeft, .registerRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registerLogo{
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.registerDesc{
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+}
+
+.registerBox{
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registerInput{
+    height: 40px;
+    border-radius: 10px;
+    border: 0.5px solid gray;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.registerInput:focus{
+    outline: none;
+}
+
+.registerButton{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.registerForgot{
+    text-align: center;
+    color: #1775ee;
+}
+
+.registerRegisterButton{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width:450px) {
+   
+
+    .registerWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registerLogo{
+        font-size: 25px;
+        font-weight: 400;
+        color: #CB4805;
+        margin-bottom: 5px;
+    }
+    
+    .registerDesc{
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+
+    .registerBox{
+        height: 300px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .registerInput{
+        height: 30px;
+        font-size: 12px;
+        padding-left: 10px;
+       
+    }
+
+    .registerButton{
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .registerRegisterButton{
+        height: 35px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .registerButton{
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    
+}

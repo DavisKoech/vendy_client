@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+
+.topStores{
+    width: 100%;
+    height: fit-content;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+
+    @include mobile{
+        margin-top: 10px;
+    }
+
+    h6{
+        font-size: 18px;
+
+        @include mobile{
+            text-align: center;
+            font-size: 15px;
+        }
+      
+    }
+
+    .storesWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        
+
+        .store{
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid gainsboro;
+            gap: 3px;
+
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @include mobile{
+                    height: 26px;
+                    width: 26px;
+                }
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 15px;
+
+                @include mobile{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

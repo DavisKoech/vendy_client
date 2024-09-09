@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+
+.outroBanner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+
+    @include mobile{
+        display: none;
+    }
+
+    .outroBannerContainer{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            width: 50%;
+
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            h1{
+                
+            }
+
+            h3{
+
+            }
+
+            button{
+               width: 140px;
+               padding: 7px; 
+               cursor: pointer;
+               background-color: rgba(17, 4, 4, 0.925);
+               font-weight: 600;
+               color: white;
+               border: none;
+            }
+        }
+    }
+}

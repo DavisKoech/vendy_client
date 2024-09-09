@@ -1,0 +1,163 @@
+@import "../../index.scss";
+
+
+.singleShop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    width: 300px;
+    height: 300px;
+
+    @include mobile{
+        width: 48%;
+        
+    }
+
+    .singleShopTop{
+        height: 80px;
+        width: 100%;
+        position: relative;
+
+        @include mobile{
+            height: 50px;
+        }
+
+        .singleShopCoverImg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px; 
+            border-top-right-radius: 5px;
+        }
+
+        .singleShopProfileImg{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+             left: 0;
+             right: 0;
+             margin: auto;
+             top: 45px;
+             border: 1px solid gainsboro;
+
+             @include mobile{
+                width: 30px;
+                height: 30px;
+                top: 35px;
+             }
+        }
+    }
+
+    .singleShopCenter{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 3px;
+
+        @include mobile{
+            margin-top: 10px;
+        }
+
+        .singleShopCenterData{
+            display: flex;
+            align-items: center;
+
+            @include mobile{
+                align-items: flex-start;
+            }
+
+            h3{
+                width: 50%;
+                font-size: 13px;
+                font-weight: 400;
+                color: grey;
+
+                @include mobile{
+                    width: 45%;
+                    gap: 3px;
+                    font-size: 12px;
+                }
+            }
+
+            h4{
+              font-size: 13px;
+              font-weight: 400;
+              width: 170px;
+
+              @include mobile{
+                font-size: 12px;
+                width: 100px;
+              }
+            }
+        }
+    }
+
+    .singleShopBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+        height: 30px;
+
+        .activity{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .likes{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+
+                span{
+                    font-size: 13px;
+
+                    @include mobile{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .followers{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
+
+        button{
+            padding: 3px;
+            border: none;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 12px;
+
+            @include mobile{
+                padding: 1px;
+                font-size: 10px;
+            }
+        }
+    }
+}

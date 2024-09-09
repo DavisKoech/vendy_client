@@ -1,0 +1,64 @@
+@import "../../index.scss";
+
+.AccountType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .wrapper{
+        width: 400px;
+        height: 250px;
+        border: 1px solid gainsboro;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        gap: 15px;
+
+        @include mobile{
+            width: 80%;
+        }
+
+        h3{
+            color: white;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        button:nth-of-type(1){
+            width: 200px;
+            padding: 4px;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease; 
+            cursor: pointer; 
+            
+            &:hover {
+                background-color: black;
+                color: white;
+              }
+        }
+
+        button:nth-of-type(2){
+            width: 200px;
+            padding: 4px;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease;  
+            
+            &:hover {
+                background-color: darkred;
+                cursor: pointer;
+                color: white;
+              }
+        }
+    }
+}

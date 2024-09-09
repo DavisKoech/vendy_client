@@ -1,0 +1,62 @@
+.profileUpdate{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: azure;
+    height: max-content;
+    width: 350px;
+    border-radius: 5px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+
+        .data{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+
+            label{
+                width: 140px;
+                font-weight: 300;
+                font-size: 13px;
+            }
+
+            input{
+                outline: none;
+                width: 200px;
+                font-size: 13px;
+                border-radius: 5px;
+                border: none;
+                border: 1px solid gainsboro;
+            }
+        }
+
+        button{
+            color: green;
+            padding: 3;
+            cursor: pointer;
+        }
+    }
+
+    .success{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: green;
+        font-size: 13px;
+    }
+
+    .error{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        font-size: 13px;
+    }
+}
