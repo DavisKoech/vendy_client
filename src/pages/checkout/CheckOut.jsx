@@ -223,11 +223,11 @@ const CheckOut = () => {
             </div>
             <div className="checkoutDeliveryData">
               <span>PickUp Location</span>
-              <input type="text" placeholder="Area/Estate/Apartment Name" value={pickupLocation} onChange={handlePickupLocationChange} required />
+              <input type="text" placeholder="Area/Estate/ApartmentName/All" value={pickupLocation} onChange={handlePickupLocationChange} required />
             </div>
             <div className="checkoutDeliveryData">
               <span>Directions</span>
-              <input type="text" placeholder="Street/Market/Landmark" value={direction} onChange={handleDirectionChange} required />
+              <input type="text" placeholder="Street/Market/Landmark/All" value={direction} onChange={handleDirectionChange} required />
             </div>
             <div className="checkoutDeliveryData">
               <span>Phone Number</span>
